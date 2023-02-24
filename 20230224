@@ -1,0 +1,21 @@
+# A 65
+# Z 90
+# 90 - 65 = 25
+# a 97
+# z 122
+# 122 - 97 = 25
+
+
+
+
+while True:
+    count = 0
+    a = input("문자를 입력해주세요 >")
+    b = input("정수를 입력해주세요 >")
+    a = ord(a)
+    for p in range(int(b)):
+        count = count + 1
+        if count > 25:
+            count = 0
+    print(chr(count + a))
+    continue
